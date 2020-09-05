@@ -5,7 +5,7 @@ import java.util.*;
 class ClientFact {
     public static void main(String[] args) throws Exception {
         Socket s = new Socket("localhost", 11111);
-
+        
         DataOutputStream dos = new DataOutputStream(s.getOutputStream());
         DataInputStream dis = new DataInputStream(s.getInputStream());
         System.out.println("Enter A string: ");
@@ -23,6 +23,8 @@ class ClientFact {
 
         s.close();
         s1.close();
+
+        // fuck u
 
     }
 
