@@ -24,8 +24,7 @@ class ClientFact {
         s.close();
         s1.close();
 
-        // fuck u
-
+    
     }
 
 }
