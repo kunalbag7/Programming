@@ -16,6 +16,7 @@ class file_client {
         String output=dis.readUTF();
         System.out.println(output);
         s.close();
+        sc.close();
         dis.close();
         dos.close();
 

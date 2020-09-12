@@ -1,5 +1,4 @@
 import java.io.FileInputStream;
-import java.io.IOException;
 
 class File_reading {
 

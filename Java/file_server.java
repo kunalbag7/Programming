@@ -18,6 +18,7 @@ class file_server {
         dos.flush();
         dis.close();
         dos.close();
+        ss.close();
         s.close();
 
         
