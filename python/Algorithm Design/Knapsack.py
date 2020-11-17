@@ -7,15 +7,15 @@ for i in range(0,n):
     k=int(input("Enter the weight of "+str(i+1)+"th element: "))
     wei.append(k)
  
-total=int(input("Enter total weight of Knapsack: ")) 
+total=int(input("Enter total weight of Knapsack: "))
  
-cal_arr = [[-1 for i in range(total + 1)] for j in range(n + 1)] 
+cal_arr = [[-1 for i in range(total + 1)] for j in range(n + 1)]
   
 def knapsack(wei, pri, W, n):
 
-    if n == 0 or W == 0: 
+    if n == 0 or W == 0:
         return 0
-    if cal_arr[n][W] != -1: 
+    if cal_arr[n][W] != -1:
         return cal_arr[n][W]
 
     if wei[n-1] <= W: 
@@ -24,6 +24,8 @@ def knapsack(wei, pri, W, n):
     elif wei[n-1] > W: 
         cal_arr[n][W] = knapsack(wei, pri, W, n-1)
         return cal_arr[n][W]
+
+    
   
 ans=knapsack(wei, pri, total, n)
 print("Maximum value: "+str(ans))
@@ -49,6 +51,3 @@ while ans>0 :
 
     else:
         n=n-1
-
-
-

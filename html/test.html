@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+</head>
 <body>
-
-<p>I am kunal Bag.</p>
-<p>Hiii</p>
-<p>This is a paragraph.</p>
-
+    <h1> College Application Form </h1>
+    <form method="post" action="display.php">
+    Enter Your Name: <input type="text" name="sname"> <br><br>
+    Date of birth: <input type="date" name="dob"> <br><br>
+    Email Id: <input type="text" name="emailid"><br><br>
+    Phone no: <input type="text" name="pno" maxlength="10"><br><br>
+    Gender: <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="other"> Other <br><br>
+    Language Known: <input type="checkbox" name="Language[]" value="Bengali"> Bengali
+    <input type="checkbox" name="Language[]" value="Hindi">Hindi
+    <input type="checkbox" name="Language[]" value="English">English
+    <input type="checkbox" name="Language[]" value="Others">
+    Others<br><br>
+    Year of study: <select name="yofs">
+    <option value="NULL">Select
+    -option</option>
+    <option value="1st Year">1st Year</option>
+    <option value="2nd Year">2nd year</option>
+    <option value="3rd Year">3rd year</option>
+    </select><br><br>
+    <input type="submit" name="submit" value="submit">
+    <input type="reset" name="reset" value="reset">
+    <input type="button" name="save_data" value="Save">
+    </form>
 </body>
 </html>
